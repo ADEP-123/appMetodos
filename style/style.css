@@ -47,3 +47,6 @@ body{
 .zonaCalculo{
     gap: 5px;
 }
+.inputCalc{
+    text-align: center;
+}
