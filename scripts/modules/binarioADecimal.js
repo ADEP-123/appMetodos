@@ -25,7 +25,7 @@ class BinarioDecimal {
                 return
             }
             const decimal = binarioADecimal(inputValor.value)
-            resultSpace.innerHTML = `El valor en decimal es ${decimal}`
+            decimal ? resultSpace.innerHTML = `El valor en decimal es ${decimal}` : null
         })
     }
 }

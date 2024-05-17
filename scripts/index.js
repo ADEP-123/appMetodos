@@ -1,5 +1,6 @@
 import BinarioDecimal from "./modules/binarioADecimal.js";
 import CirasSignificativas from "./modules/cifrasSignificativas.js";
+import DecimalBinario from "./modules/decimalABinario.js";
 import ErrorRelativoPorc from "./modules/erorRelativoPorc.js";
 import ErrorAbsoluto from "./modules/errorAbsoluto.js";
 
@@ -14,3 +15,6 @@ calculadoraErrorRelativoPorc.nuevoCalculo()
 
 const calculadoraBinarioDecimal = new BinarioDecimal
 calculadoraBinarioDecimal.nuevoCalculo()
+
+const calculadoraDecimalBinario = new DecimalBinario
+calculadoraDecimalBinario.nuevoCalculo()
