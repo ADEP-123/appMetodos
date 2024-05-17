@@ -1,6 +1,6 @@
 const divErrorAbsoluto = document.getElementById("errorAbsolutoDIV")
-const inputValorAprox = document.getElementById("valAproxInput")
-const inputValorReal = document.getElementById("valRealInput")
+const inputValorAprox = divErrorAbsoluto.querySelector("#valAproxInput")
+const inputValorReal = divErrorAbsoluto.querySelector("#valRealInput")
 const calcButton = divErrorAbsoluto.querySelector("button");
 const resultSpace = divErrorAbsoluto.querySelector("p");
 
