@@ -28,6 +28,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0.5%;
+    gap: 5px;
 }
 
 .calculadora{
