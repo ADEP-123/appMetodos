@@ -5,6 +5,7 @@ import DecimalBinario from "./modules/decimalABinario.js";
 import ErrorRelativoPorc from "./modules/erorRelativoPorc.js";
 import ErrorAbsoluto from "./modules/errorAbsoluto.js";
 import FraccionarioBinario from "./modules/fraccionarioABinario.js";
+import BinarioExponente from "./modules/puntoFlot.js";
 
 const calculadoraCifrasSignificativas = new CirasSignificativas
 calculadoraCifrasSignificativas.nuevoCalculo()
@@ -26,3 +27,6 @@ calculadoraFraccionarioBinario.nuevoCalculo()
 
 const calculadoraBinarioFraccionario = new BinarioFraccionario;
 calculadoraBinarioFraccionario.nuevoCalculo()
+
+const calculadoraBinarioAExponente = new BinarioExponente;
+calculadoraBinarioAExponente.nuevoCalculo()

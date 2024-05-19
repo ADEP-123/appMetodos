@@ -27,13 +27,15 @@ body{
     flex-direction: row;   
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
     padding: 0.5%;
     gap: 5px;
 }
 
 .calculadora{
-    width: 20%;
-    height: 40%;
+    width: 19vw;
+    height: 29vh;
     border: 1px solid var(--white);
    
 }

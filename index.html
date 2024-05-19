@@ -88,6 +88,30 @@
             </div>
             <p class="result">-</p>
         </div>
+
+        <div id="binarioAExponente" class="calculadora">
+            <header>
+                <h3>Binario a Exponente punto flotante</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="number" placeholder="Numero Binario" class="inputCalc" id="inputCalc">
+                <input type="number" placeholder="Bits Mantisa" class="inputCalc" id="bitsMantisa">
+                <select name="" id="signoMantisa">
+                    <option value="BCS">Mantisa BCS</option>
+                    <option value="BSS">Mantisa BSS</option>
+                </select>
+                <select name="" id="fracMantisa">
+                    <option value="FRAC">Mantisa Frac</option>
+                    <option value="ENTERA">Mantisa Ent</option>
+                </select>
+                <select name="" id="signoExponente">
+                    <option value="BCS">Exponente BCS</option>
+                    <option value="BSS">Exponente BSS</option>
+                </select>
+                <button class="calcButton" id="calcButton">Calcular</button>
+            </div>
+            <p class="result">-</p>
+        </div>
     </div>
     <script type="module" src="scripts/index.js"></script>
 </body>

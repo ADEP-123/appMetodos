@@ -17,12 +17,10 @@ function BinarioAFraccionario(numero) {
 
     // Sacar el signo de la parte entera
     let signo = "+"
-    console.log(parteEntera[0]);
     if (parteEntera[0] == 1) {
         signo = "-"
     }
     parteEntera = parteEntera.substring(1)
-    console.log(parteEntera);
 
     // Convertir la parte entera a decimal
     let enteroDecimal = parseInt(parteEntera, 2);
