@@ -1,4 +1,5 @@
 import BinarioDecimal from "./modules/binarioADecimal.js";
+import BinarioFraccionario from "./modules/binarioAFraccionario.js";
 import CirasSignificativas from "./modules/cifrasSignificativas.js";
 import DecimalBinario from "./modules/decimalABinario.js";
 import ErrorRelativoPorc from "./modules/erorRelativoPorc.js";
@@ -22,3 +23,6 @@ calculadoraDecimalBinario.nuevoCalculo()
 
 const calculadoraFraccionarioBinario = new FraccionarioBinario
 calculadoraFraccionarioBinario.nuevoCalculo()
+
+const calculadoraBinarioFraccionario = new BinarioFraccionario;
+calculadoraBinarioFraccionario.nuevoCalculo()

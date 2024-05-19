@@ -31,7 +31,7 @@ function fraccionarioABinario(numero) {
     let mantisa = parteEntera + "." + parteFraccionaria;
 
     // Devolver el resultado con el signo y la mantisa
-    return signo + " " + mantisa;
+    return signo + mantisa;
 }
 
 class FraccionarioBinario {
@@ -44,7 +44,7 @@ class FraccionarioBinario {
                 return
             }
             const binario = fraccionarioABinario(inputValor.value)
-            binario ? resultSpace.innerHTML = `El valor en binario es <br> ${binario}` : null
+            binario ? resultSpace.innerHTML = `El valor en binario (MCS) es:<br>${binario}` : null
         })
     }
 }
