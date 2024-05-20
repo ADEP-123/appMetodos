@@ -9,7 +9,7 @@ function fraccionarioABinario(numero) {
     numero = Number(numero)
     // Verificar si la entrada es un número válido
     if (isNaN(numero)) {
-        alert("Número inválido")
+        agregarError("Número inválido")
         return;
     }
 
@@ -42,7 +42,7 @@ class FraccionarioBinario {
             event.preventDefault();
             event.stopPropagation();
             if (!inputValor.value) {
-                alert("Debe ingresar un numero fraccionario para hacer la conversion")
+                agregarError("Debe ingresar un numero fraccionario para hacer la conversion")
                 return
             }
             const binario = fraccionarioABinario(inputValor.value)
