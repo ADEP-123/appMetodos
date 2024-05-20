@@ -1,3 +1,5 @@
+import agregarError from "./agregarError.js";
+
 const divFraccionarioABinario = document.getElementById("fraccBinarioDIV")
 const inputValor = divFraccionarioABinario.querySelector("input")
 const calcButton = divFraccionarioABinario.querySelector("button");

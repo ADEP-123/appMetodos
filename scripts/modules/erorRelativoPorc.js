@@ -1,3 +1,5 @@
+import agregarError from "./agregarError.js";
+
 const divErrorRelativoPorc = document.getElementById("errorRelativPorcDIV")
 const inputValorAprox = divErrorRelativoPorc.querySelector("#valAproxInput")
 const inputValorReal = divErrorRelativoPorc.querySelector("#valRealInput")
@@ -27,11 +29,11 @@ class ErrorRelativoPorc {
             event.preventDefault();
             event.stopPropagation();
             if (!inputValorAprox.value) {
-                alert("Debe ingresar un numero para el valor aproximado")
+                agregarError("Debe ingresar un numero para el valor aproximado")
                 return
             }
             if (!inputValorReal.value) {
-                alert("Debe ingresar un numero para el valor real")
+                agregarError("Debe ingresar un numero para el valor real")
                 return
             }
             const errores = calcularErrores(inputValorAprox.value, inputValorReal.value)

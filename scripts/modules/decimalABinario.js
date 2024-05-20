@@ -1,3 +1,5 @@
+import agregarError from "./agregarError.js";
+
 const divDecimalABinario = document.getElementById("decimalBinarioDiv")
 const inputValor = divDecimalABinario.querySelector("input")
 const calcButton = divDecimalABinario.querySelector("button");
@@ -7,7 +9,7 @@ function decimalABinario(decimal) {
     decimal = Number(decimal)
     // Verificar si la entrada es un número decimal válido
     if (isNaN(decimal) || !Number.isInteger(decimal) || decimal < 0) {
-        alert("Número decimal inválido")
+        agregarError("Número decimal inválido")
         return null;
     }
 
@@ -23,7 +25,7 @@ class DecimalBinario {
             event.preventDefault();
             event.stopPropagation();
             if (!inputValor.value) {
-                alert("Debe ingresar un numero decimal para hacer la conversion")
+                agregarError("Debe ingresar un numero decimal para hacer la conversion")
                 return
             }
             const binario = decimalABinario(inputValor.value)

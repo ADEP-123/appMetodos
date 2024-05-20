@@ -1,3 +1,5 @@
+import agregarError from "./agregarError.js";
+
 const divBinarioAFraccionario = document.getElementById("binarioFraccionarioDIV")
 const inputValor = divBinarioAFraccionario.querySelector("input")
 const calcButton = divBinarioAFraccionario.querySelector("button");
@@ -7,7 +9,7 @@ function BinarioAFraccionario(numero) {
     numero = numero.toString()
     const regex = /^[01.]+$/;
     if (regex.test(numero) == false) {
-        alert("Numero invalido")
+        agregarError("Numero invalido")
         return
     }
     // Separar la parte entera de la parte decimal
@@ -44,7 +46,7 @@ class BinarioFraccionario {
             event.preventDefault();
             event.stopPropagation();
             if (!inputValor.value) {
-                alert("Debe ingresar un numero binario para hacer la conversion")
+                agregarError("Debe ingresar un numero binario para hacer la conversion")
                 return
             }
             const fraccionario = BinarioAFraccionario(inputValor.value)

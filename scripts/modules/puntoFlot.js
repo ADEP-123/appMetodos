@@ -1,3 +1,5 @@
+import agregarError from "./agregarError.js"
+
 const divPuntoFlot = document.getElementById("binarioAExponente")
 const inputValor = divPuntoFlot.querySelector("#inputCalc")
 const bitsMantiza = divPuntoFlot.querySelector("#bitsMantisa")
@@ -11,12 +13,12 @@ function BinarioAExponente(numero) {
     numero = numero.toString()
     const regex = /^[01]+$/;
     if (regex.test(numero) == false) {
-        alert("Numero invalido")
+        agregarError("Numero invalido")
         return
     }
     const bitsMantisa = Number(bitsMantiza.value)
     if (numero.length < bitsMantisa) {
-        alert("La longitud del numero es menor a los bits de la mantisa")
+        agregarError("La longitud del numero es menor a los bits de la mantisa")
     }
     // Separar la mantisa del exponente
     let mantisa = numero.slice(0, bitsMantisa)
@@ -55,7 +57,7 @@ class BinarioExponente {
             event.preventDefault();
             event.stopPropagation();
             if (!inputValor.value) {
-                alert("Debe ingresar un numero binario para hacer la conversion")
+                agregarError("Debe ingresar un numero binario para hacer la conversion")
                 return
             }
             const exponente = BinarioAExponente(inputValor.value)

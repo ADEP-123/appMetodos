@@ -1,3 +1,5 @@
+import agregarError from "./agregarError.js";
+
 const divErrorAbsoluto = document.getElementById("errorAbsolutoDIV")
 const inputValorAprox = divErrorAbsoluto.querySelector("#valAproxInput")
 const inputValorReal = divErrorAbsoluto.querySelector("#valRealInput")
@@ -16,11 +18,11 @@ class ErrorAbsoluto {
             event.preventDefault();
             event.stopPropagation();
             if (!inputValorAprox.value) {
-                alert("Debe ingresar un numero para el valor aproximado")
+                agregarError("Debe ingresar un numero para el valor aproximado")
                 return
             }
             if (!inputValorReal.value) {
-                alert("Debe ingresar un numero para el valor real")
+                agregarError("Debe ingresar un numero para el valor real")
                 return
             }
             const errorAbosulto = calcularErrorAbsoluto(inputValorAprox.value, inputValorReal.value)

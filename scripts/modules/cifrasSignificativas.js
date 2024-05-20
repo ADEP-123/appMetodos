@@ -1,3 +1,5 @@
+import agregarError from "./agregarError.js";
+
 const divCifrasSignificativas = document.getElementById("cifrasSignificativasDIV")
 const inputCifras = divCifrasSignificativas.querySelector("input")
 const buttonCifras = divCifrasSignificativas.querySelector("button");
@@ -36,7 +38,7 @@ class CirasSignificativas {
             event.preventDefault();
             event.stopPropagation();
             if (!inputCifras.value) {
-                alert("Debe ingresar un numero para calcular")
+                agregarError("Debe ingresar un numero para calcular")
                 return
             }
             const cantidadCifras = contarCifrasSignificativas(inputCifras.value)

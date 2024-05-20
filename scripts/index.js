@@ -6,7 +6,9 @@ import ErrorRelativoPorc from "./modules/erorRelativoPorc.js";
 import ErrorAbsoluto from "./modules/errorAbsoluto.js";
 import FraccionarioBinario from "./modules/fraccionarioABinario.js";
 import BinarioExponente from "./modules/puntoFlot.js";
+import Variables from "./variables.js";
 
+const variables = new Variables;
 const calculadoraCifrasSignificativas = new CirasSignificativas
 calculadoraCifrasSignificativas.nuevoCalculo()
 
@@ -30,3 +32,9 @@ calculadoraBinarioFraccionario.nuevoCalculo()
 
 const calculadoraBinarioAExponente = new BinarioExponente;
 calculadoraBinarioAExponente.nuevoCalculo()
+
+document.addEventListener("DOMContentLoaded", e => {
+    e.preventDefault()
+    e.stopPropagation()
+    document.querySelector(".alertas").innerHTML = "";
+})
