@@ -1,146 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3625/3625050.png" />
-        <title>APPMetodos</title>
-    </head>
 
-    <body>
-        <div class="head">
-            <h1>Proyecto de Aula - Métodos Numéricos</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3625/3625050.png" />
+    <title>APPMetodos</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Proyecto de Aula - Métodos Numéricos</h1>
+    </div>
+    <div class="text-content">
+        <p>A continuación encontrarás una serie de calculadoras con las que podrás realizar distintas cosas como:</p>
+    </div>
+    <div class="zonaCalculadoras" id="divCalculadoras">
+        <div id="cifrasSignificativasDIV" class="calculadora">
+            <header>
+                <h3>Cantidad Cifras Significativas</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="text" placeholder="Ej: 1.53e-5" class="inputCalc" id="cifrasInput" />
+                <button class="calcButton" id="cifrasButtn">Calcular</button>
+            </div>
+            <p class="result">-</p>
         </div>
-        <div class="text-content">
-            <p>A continuación encontrarás una serie de calculadoras con las que podrás realizar distintas cosas como:</p>
+
+        <div id="errorAbsolutoDIV" class="calculadora">
+            <header>
+                <h3>Error absoluto</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="number" placeholder="Valor Aproximado" class="inputCalc" id="valAproxInput" />
+                <input type="number" placeholder="Valor Real" class="inputCalc" id="valRealInput" />
+                <button class="calcButton" id="errorAbsButton">Calcular</button>
+            </div>
+            <p class="result">-</p>
         </div>
-        <div class="zonaCalculadoras" id="divCalculadoras">
-            <div id="cifrasSignificativasDIV" class="calculadora">
-                <header>
-                    <h3>Cantidad Cifras Significativas</h3>
-                </header>
-                <div class="zonaCalculo">
-                    <input type="text" placeholder="Ej: 1.53e-5" class="inputCalc" id="cifrasInput" />
-                    <button class="calcButton" id="cifrasButtn">Calcular</button>
-                </div>
-                <p class="result">-</p>
-            </div>
 
-            <div id="errorAbsolutoDIV" class="calculadora">
-                <header>
-                    <h3>Error absoluto</h3>
-                </header>
-                <div class="zonaCalculo">
-                    <input type="number" placeholder="Valor Aproximado" class="inputCalc" id="valAproxInput" />
-                    <input type="number" placeholder="Valor Real" class="inputCalc" id="valRealInput" />
-                    <button class="calcButton" id="errorAbsButton">Calcular</button>
-                </div>
-                <p class="result">-</p>
+        <div id="errorRelativPorcDIV" class="calculadora">
+            <header>
+                <h3>Error Relativo y porcentual</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="number" placeholder="Valor Aproximado" class="inputCalc" id="valAproxInput" />
+                <input type="number" placeholder="Valor Real" class="inputCalc" id="valRealInput" />
+                <button class="calcButton" id="errorAbsButton">Calcular</button>
             </div>
+            <p class="result">-</p>
+        </div>
 
-            <div id="errorRelativPorcDIV" class="calculadora">
-                <header>
-                    <h3>Error Relativo y porcentual</h3>
-                </header>
-                <div class="zonaCalculo">
-                    <input type="number" placeholder="Valor Aproximado" class="inputCalc" id="valAproxInput" />
-                    <input type="number" placeholder="Valor Real" class="inputCalc" id="valRealInput" />
-                    <button class="calcButton" id="errorAbsButton">Calcular</button>
-                </div>
-                <p class="result">-</p>
+        <div id="binarioDecimalDiv" class="calculadora">
+            <header>
+                <h3>Binario a Decimal</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="number" placeholder="Numero Binario" class="inputCalc" id="binDecInput" />
+                <button class="calcButton" id="errorAbsButton">Calcular</button>
             </div>
+            <p class="result">-</p>
+        </div>
 
-            <div id="binarioDecimalDiv" class="calculadora">
-                <header>
-                    <h3>Binario a Decimal</h3>
-                </header>
-                <div class="zonaCalculo">
-                    <input type="number" placeholder="Numero Binario" class="inputCalc" id="binDecInput" />
-                    <button class="calcButton" id="errorAbsButton">Calcular</button>
-                </div>
-                <p class="result">-</p>
+        <div id="decimalBinarioDiv" class="calculadora">
+            <header>
+                <h3>Decimal a Binario</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="number" placeholder="Numero Decimal" class="inputCalc" id="decBinInpt" />
+                <button class="calcButton" id="errorAbsButton">Calcular</button>
             </div>
+            <p class="result">-</p>
+        </div>
 
-            <div id="decimalBinarioDiv" class="calculadora">
-                <header>
-                    <h3>Decimal a Binario</h3>
-                </header>
-                <div class="zonaCalculo">
-                    <input type="number" placeholder="Numero Binario" class="inputCalc" id="decBinInpt" />
-                    <button class="calcButton" id="errorAbsButton">Calcular</button>
-                </div>
-                <p class="result">-</p>
+        <div id="fraccBinarioDIV" class="calculadora">
+            <header>
+                <h3>Fraccionario a Binario (MCS)</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="number" placeholder="Numero Fraccionario" class="inputCalc" id="decBinInpt" />
+                <button class="calcButton" id="errorAbsButton">Calcular</button>
             </div>
+            <p class="result">-</p>
+        </div>
 
-            <div id="fraccBinarioDIV" class="calculadora">
-                <header>
-                    <h3>Fraccionario a Binario (MCS)</h3>
-                </header>
-                <div class="zonaCalculo">
-                    <input type="number" placeholder="Numero Fraccionario" class="inputCalc" id="decBinInpt" />
-                    <button class="calcButton" id="errorAbsButton">Calcular</button>
-                </div>
-                <p class="result">-</p>
+        <div id="binarioFraccionarioDIV" class="calculadora">
+            <header>
+                <h3>Binario (MCS) a Fraccionario</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="number" placeholder="Numero Binario" class="inputCalc" id="inputCalc" />
+                <button class="calcButton" id="calcButton">Calcular</button>
             </div>
+            <p class="result">-</p>
+        </div>
 
-            <div id="binarioFraccionarioDIV" class="calculadora">
-                <header>
-                    <h3>Binario (MCS) a Fraccionario</h3>
-                </header>
-                <div class="zonaCalculo">
-                    <input type="number" placeholder="Numero Binario" class="inputCalc" id="inputCalc" />
-                    <button class="calcButton" id="calcButton">Calcular</button>
-                </div>
-                <p class="result">-</p>
+        <div id="binarioAExponente" class="calculadora">
+            <header>
+                <h3>Binario a Exponente punto flotante</h3>
+            </header>
+            <div class="zonaCalculo">
+                <input type="number" placeholder="Numero Binario" class="inputCalc" id="inputCalc" />
+                <input type="number" placeholder="Bits Mantisa" class="inputCalc" id="bitsMantisa" />
+                <select name="" id="signoMantisa">
+                    <option value="BCS">Mantisa BCS</option>
+                    <option value="BSS">Mantisa BSS</option>
+                </select>
+                <select name="" id="fracMantisa">
+                    <option value="FRAC">Mantisa Frac</option>
+                    <option value="ENTERA">Mantisa Ent</option>
+                </select>
+                <select name="" id="signoExponente">
+                    <option value="BCS">Exponente BCS</option>
+                    <option value="BSS">Exponente BSS</option>
+                </select>
+                <button class="calcButton" id="calcButton">Calcular</button>
             </div>
-
-            <div id="binarioAExponente" class="calculadora">
-                <header>
-                    <h3>Binario a Exponente punto flotante</h3>
-                </header>
-                <div class="zonaCalculo">
-                    <input type="number" placeholder="Numero Binario" class="inputCalc" id="inputCalc" />
-                    <input type="number" placeholder="Bits Mantisa" class="inputCalc" id="bitsMantisa" />
-                    <select name="" id="signoMantisa">
-                        <option value="BCS">Mantisa BCS</option>
-                        <option value="BSS">Mantisa BSS</option>
-                    </select>
-                    <select name="" id="fracMantisa">
-                        <option value="FRAC">Mantisa Frac</option>
-                        <option value="ENTERA">Mantisa Ent</option>
-                    </select>
-                    <select name="" id="signoExponente">
-                        <option value="BCS">Exponente BCS</option>
-                        <option value="BSS">Exponente BSS</option>
-                    </select>
-                    <button class="calcButton" id="calcButton">Calcular</button>
-                </div>
-                <p class="result">-</p>
-            </div>
-            <div class="info">
-                <h3>Integrantes:</h3>
-                <ul>
-                    <li>Emily Nieves - 01220371022</li>
-                    <li>Andrés Elizalde - 01220371068</li>
-                </ul>
-                <h4>Programa de ingeniería de software</h4>
-                <h4>Universidad de Santander</h4>
-            </div>
-            <div class="alertas">
-                <div class="alerta">
-                    <img src="images/alert.png" />
-                    <p class="errorTittle"><b>Alerta</b></p>
-                    <p class="errorMessage">Error message</p>
-                </div>
+            <p class="result">-</p>
+        </div>
+        <div class="info">
+            <h3>Integrantes:</h3>
+            <ul>
+                <li>Emily Nieves - 01220371022</li>
+                <li>Andrés Elizalde - 01220371068</li>
+            </ul>
+            <h4>Programa de ingeniería de software</h4>
+            <h4>Universidad de Santander</h4>
+        </div>
+        <div class="alertas">
+            <div class="alerta">
+                <img src="images/alert.png" />
+                <p class="errorTittle"><b>Alerta</b></p>
+                <p class="errorMessage">Error message</p>
             </div>
         </div>
-        <script type="module" src="scripts/index.js"></script>
-    </body>
+    </div>
+    <script type="module" src="scripts/index.js"></script>
+</body>
+
 </html>
